@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checking position</title>
+    <style>
+        .photo-frame {
+            display: flex;
+            flex-wrap: wrap;
+            
+        }
+        .photo-album {
+            position: relative;
+            width: 300px;
+            height: 180px;
+            border: 5px solid magenta;
+            border-radius: 10px;
+            margin: 10px;
+            overflow: hidden;
+        }
+        .photo-album:hover .photo-detail {
+             display: block; 
+            background: #966596a3;
+
+        }
+        .photo-album:hover .photo-detail p{
+            color:white;
+            
+        }
+        .photo-image {
+            width: 300px;
+            height: 400px;
+        }
+        .photo-image img {
+            width: 100%;
+        }
+        .photo-detail {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            display: none;
+        }
+        .photo-album:hover .photo-image img {
+            transform : rotate(360deg);
+            transition: transform 1s;
+        }
+        /* grid styel here */
+        .container {
+            grid-gap: 30px 18px;
+            display: grid;
+            grid-template-columns: 250px 1fr 1fr;
+            text-align: center;
+        }
+        .article {
+            background-color: teal;
+        }
+        .article-1 {
+            grid-row: 1/span 6;
+        }
+        .article-2 {
+            grid-column: 2/ span 2;
+        }
+        /* display style here */
+        .room {
+            width: 300px;
+            height: 150px;
+            border: 3px solid teal;
+            margin: 10px;
+            display: inline;
+        }
+        .room h3, p{
+            display: inline;
+        }
+        a {
+            margin-left: 80px;
+            border: 2px solid red;
+            height: 100px;
+            width: 300px;
+        }
+        li {
+            display: inline
+        }
+    </style>
+</head>
+<body>
+    <h3>My photo album</h3>
+    <div class="photo-frame">
+        <div class="photo-album">
+                <div class="photo-image">
+                    <img src="tiger.jpg" alt="">
+                </div>
+                <div class="photo-detail">
+                    <h2>Royal Bengal Tiger</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos repellat blanditiis id illum architecto cumque veniam praesentium nulla expedita, magnam temporibus rerum, hic amet sed? Sunt sed ab nam rerum esse, suscipit inventore eaque error temporibus voluptas optio voluptate libero</p>
+                </div>
+        </div>
+        <div class="photo-album">
+            <div class="photo-image">
+                <img src="tiger.jpg" alt="">
+            </div>
+            <div class="photo-detail">
+                <h2>Royal Bengal Tiger</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos repellat blanditiis id illum architecto cumque veniam praesentium nulla expedita, magnam temporibus rerum, hic amet sed? Sunt sed ab nam rerum esse, suscipit inventore eaque error temporibus voluptas optio voluptate libero</p>
+            </div>
+    </div>
+    <div class="photo-album">
+        <div class="photo-image">
+            <img src="tiger.jpg" alt="">
+        </div>
+        <div class="photo-detail">
+            <h2>Royal Bengal Tiger</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos repellat blanditiis id illum architecto cumque veniam praesentium nulla expedita, magnam temporibus rerum, hic amet sed? Sunt sed ab nam rerum esse, suscipit inventore eaque error temporibus voluptas optio voluptate libero</p>
+        </div>
+    </div>
+    <div class="photo-album">
+        <div class="photo-image">
+            <img src="tiger.jpg" alt="">
+        </div>
+        <div class="photo-detail">
+            <h2>Royal Bengal Tiger</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos repellat blanditiis id illum architecto cumque veniam praesentium nulla expedita, magnam temporibus rerum, hic amet sed? Sunt sed ab nam rerum esse, suscipit inventore eaque error temporibus voluptas optio voluptate libero</p>
+        </div>
+    </div>
+    <div class="photo-album">
+        <div class="photo-image">
+            <img src="tiger.jpg" alt="">
+        </div>
+        <div class="photo-detail">
+            <h2>Royal Bengal Tiger</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos repellat blanditiis id illum architecto cumque veniam praesentium nulla expedita, magnam temporibus rerum, hic amet sed? Sunt sed ab nam rerum esse, suscipit inventore eaque error temporibus voluptas optio voluptate libero</p>
+        </div>
+    </div>
+    <div class="photo-album">
+        <div class="photo-image">
+            <img src="tiger.jpg" alt="">
+        </div>
+        <div class="photo-detail">
+            <h2>Royal Bengal Tiger</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos repellat blanditiis id illum architecto cumque veniam praesentium nulla expedita, magnam temporibus rerum, hic amet sed? Sunt sed ab nam rerum esse, suscipit inventore eaque error temporibus voluptas optio voluptate libero</p>
+        </div>
+    </div>
+</div>
+           <!-- grid practice with jhankar vai  -->
+
+<section class="container">
+    <article class="article article-1">
+        <h3>article-1</h3>
+    </article>
+    <article class="article article-2">
+        <h3>article-2</h3>
+    </article>
+    <article class="article article-3">
+        <h3>article-3</h3>
+    </article>
+    <article class="article article-4">
+        <h3>article-4</h3>
+    </article>
+    <article class="article article-5">
+        <h3>article-5</h3>
+    </article>
+    <article class="article article-6">
+        <h3>article-6</h3>
+    </article>
+    <article class="article article-7">
+        <h3>article-7</h3>
+    </article>
+    <article class="article article-8">
+        <h3>article-8</h3>
+    </article>
+    <article class="article article-9">
+        <h3>article-9</h3>
+    </article>
+    <article class="article article-10">
+        <h3>article-10</h3>
+    </article>
+    <article class="article article-11">
+        <h3>article-11</h3>
+    </article>
+    <article class="article article-12">
+        <h3>article-12</h3>
+    </article>
+    <article class="article article-13">
+        <h3>article-13</h3>
+    </article>
+    <article class="article article-14">
+        <h3>article-14</h3>
+    </article>
+    <article class="article article-15">
+        <h3>article-15</h3>
+    </article>
+</section>
+<h1>my house</h1>
+<h1>a</h1>
+<p>my description: 
+    <a href="https://bangla2.programming-hero.com/course-status/">Hero</a>
+    <a href="https://bangla2.programming-hero.com/course-status/">Hero</a>
+    <a href="https://bangla2.programming-hero.com/course-status/">Hero</a>
+    <span>abc</span>
+    <strong>powerful</strong>
+</p>
+<ul>
+    <li>my favorite food-1</li>
+    <li>my favorite food-2</li>
+    <li>my favorite food-3</li>
+</ul>
+
+<div class="room">
+    <h3>room-1</h3>
+    <p>Room owned by-1</p>
+</div>
+<div class="room">
+    <h3>room-2</h3>
+    <p>Room owned by-2</p>
+</div>
+<div class="room">
+    <h3>room-3</h3>
+    <p>Room owned by-3</p>
+</div>
+<div class="room">
+    <h3>room-4</h3>
+    <p>Room owned by-4</p>
+</div>
+</body>
+</html>
